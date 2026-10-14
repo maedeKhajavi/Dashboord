@@ -1,0 +1,1293 @@
+<!doctype html>
+<html lang="en" dir="rtl">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- css -->
+        <link rel="stylesheet" href="asset/css/bootstrap.css" />
+        <!-- bootstrap -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.rtl.min.css"
+            integrity="sha384-CfCrinSRH2IR6a4e6fy2q6ioOX7O6Mtm1L9vRvFZ1trBncWmMePhzvafv7oIcWiW"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"
+        ></script>
+        <!-- icons -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+            rel="stylesheet"
+        />
+        <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@100..900&display=swap"
+            rel="stylesheet"
+        />
+
+        <title>dashboord_khajavi</title>
+        <style>
+            .card-icon {
+                font-size: 4rem;
+                opacity: 0.4;
+                position: absolute;
+                top: 50%;
+                inset-inline-end: 1rem;
+                transform: translateY(-50%);
+                pointer-events: none;
+            }
+        </style>
+    </head>
+
+    <body data-bs-theme="light">
+        <div class="container-fluid">
+            <div class="row">
+                <!--sidebar section-->
+                <div class="d-none d-md-block col-sm-3 min-vh-100 shadow position-fixed top-0 start-0">
+                    <div>
+                        <div class="m-1 mt-2 border-bottom mb-1">
+                            <a
+                                href=""
+                                class="text-decoration-none d-flex align-items-center"
+                            >
+                                <i class="ri-collage-fill text-info fs-4"></i>
+                                <span
+                                    class="text-secondary-emphasis fs-5 fw-bold ps-2"
+                                    >داشبورد</span
+                                >
+                            </a>
+                        </div>
+                        <div>
+                            <ul class="nav flex-column nav-pills">
+                                <li class="nav-item">
+                                    <a
+                                        href=""
+                                        class="text-decoration-none nav-link active"
+                                        >داشبورد</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href=""
+                                        class="text-decoration-none nav-link text-secondary"
+                                        >گفت و گو</a
+                                    >
+                                </li>
+                                <li class="nav-item">
+                                    <a
+                                        href=""
+                                        class="text-decoration-none nav-link text-secondary"
+                                        >تیکت
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <div
+                                        class="accordion accordion-flush"
+                                        id="accordionFlushExample"
+                                    >
+                                        <div class="accordion-item">
+                                            <h2
+                                                class="accordion-header text-primary-emphasis fw-normal fs-1"
+                                            >
+                                                <a
+                                                    href=""
+                                                    class="text-decoration-none accordion-button collapsed text-secondary-emphasis px-3 py-2 fw-normal"
+                                                    type="button"
+                                                    data-bs-toggle="collapse"
+                                                    data-bs-target="#num-one"
+                                                    aria-expanded="false"
+                                                    aria-controls="num-one"
+                                                >
+                                                    صفحات
+                                                </a>
+                                            </h2>
+                                            <div
+                                                id="num-one"
+                                                class="accordion-collapse collapse"
+                                                data-bs-parent="#accordionFlushExample"
+                                            >
+                                                <div class="accordion-body p-0">
+                                                    <ul
+                                                        class="list-unstyled mb-0"
+                                                    >
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                >صفحه‌ی۱</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                >صفحه‌ی۲</a
+                                                            >
+                                                        </li>
+                                                        <li>
+                                                            <a
+                                                                href="#"
+                                                                class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                >صفحه‌ی۳</a
+                                                            >
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="text-decoration-none nav-link text-secondary"
+                                        >پروژه ها</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href=""
+                                        class="text-decoration-none nav-link text-secondary"
+                                        >مهارت ها</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--mobile sidebar -->
+                <div class="offcanvas offcanvas-start" id="offcanvasExample">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title">داشبورد</h5>
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="offcanvas"
+                            aria-label="Close"
+                        ></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div>
+                            <div class="m-1 mt-2 border-bottom mb-1">
+                                <a
+                                    href=""
+                                    class="text-decoration-none d-flex align-items-center"
+                                >
+                                    <i
+                                        class="ri-collage-fill text-info fs-4"
+                                    ></i>
+                                    <span
+                                        class="text-secondary-emphasis fs-5 fw-bold ps-2"
+                                        >داشبورد</span
+                                    >
+                                </a>
+                            </div>
+                            <div>
+                                <ul class="nav flex-column nav-pills">
+                                    <li class="nav-item">
+                                        <a
+                                            href=""
+                                            class="text-decoration-none nav-link active"
+                                            >داشبورد</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href=""
+                                            class="text-decoration-none nav-link text-secondary"
+                                            >گفت و گو</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href=""
+                                            class="text-decoration-none nav-link text-secondary"
+                                            >تیکت
+                                        </a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <div
+                                            class="accordion accordion-flush"
+                                            id="accardionflesh"
+                                        >
+                                            <div class="accordion-item">
+                                                <h2
+                                                    class="accordion-header text-primary-emphasis fw-normal fs-1"
+                                                >
+                                                    <a
+                                                        href=""
+                                                        class="text-decoration-none accordion-button collapsed text-secondary-emphasis px-3 py-2 fw-normal"
+                                                        type="button"
+                                                        data-bs-toggle="collapse"
+                                                        data-bs-target="#num-one"
+                                                        aria-expanded="false"
+                                                        aria-controls="num-one"
+                                                    >
+                                                        صفحات
+                                                    </a>
+                                                </h2>
+                                                <div
+                                                    id="num-one"
+                                                    class="accordion-collapse collapse"
+                                                    data-bs-parent="#accardionflesh"
+                                                >
+                                                    <div
+                                                        class="accordion-body p-0"
+                                                    >
+                                                        <ul
+                                                            class="list-unstyled mb-0"
+                                                        >
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                    >صفحه‌ی۱</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                    >صفحه‌ی۲</a
+                                                                >
+                                                            </li>
+                                                            <li>
+                                                                <a
+                                                                    href="#"
+                                                                    class="d-block px-3 py-2 text-decoration-none text-secondary"
+                                                                    >صفحه‌ی۳</a
+                                                                >
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a
+                                            href=""
+                                            class="text-decoration-none nav-link text-secondary"
+                                            >پروژه ها</a
+                                        >
+                                    </li>
+                                    <li>
+                                        <a
+                                            href=""
+                                            class="text-decoration-none nav-link text-secondary"
+                                            >مهارت ها</a
+                                        >
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--main section-->
+                <div class="col-12 col-md-9 offset-md-3 min-vh-100">
+                    <!-- header section -->
+                    <div
+                        class="row border-bottom border-2 my-3 mx-1 align-items-center"
+                    >
+                        <div class="col-8 col-sm-4 d-none d-sm-flex">
+                            <div class="input-group input-group-sm w-100">
+                                <span class="input-group-text">
+                                    <i class="ri-search-2-line"></i>
+                                </span>
+                                <input
+                                    type="text"
+                                    class="form-control text-end"
+                                    placeholder="جست‌وجو"
+                                />
+                            </div>
+                        </div>
+                        <div class="col-2 d-flex d-sm-none">
+                            <button
+                                class="btn btn-light border-1 p-1"
+                                type="button"
+                                data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasExample"
+                                aria-controls="offcanvasExample"
+                            >
+                                <i class="ri-align-justify fs-4"></i>
+                            </button>
+                        </div>
+                        <div
+                            class="col d-flex justify-content-end align-items-center"
+                        >
+                            <!-- status section-->
+                            <div class="dropdown me-2">
+                                <button
+                                    type="button"
+                                    class="btn btn-outline-primary btn-sm dropdown-toggle nav-pills"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    تغییر تم
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <button
+                                            href=""
+                                            class="light_btn dropdown-item border-bottom border-1 active"
+                                        >
+                                            <i
+                                                class="ri-sun-fill text-warning"
+                                            ></i>
+                                            <span>روشن</span>
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button
+                                            href=""
+                                            class="dark_btn dropdown-item"
+                                        >
+                                            <i
+                                                class="ri-contrast-2-fill"
+                                                style="color: #001a8f"
+                                            ></i>
+                                            <span>تاریک</span>
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <!-- profile section -->
+                            <div class="dropdown py-0">
+                                <button
+                                    type="button"
+                                    class="btn btn-sm border-0"
+                                    data-bs-toggle="dropdown"
+                                >
+                                    <img
+                                        src="asset/img/maede.jpg"
+                                        alt="user_pic"
+                                        height="50"
+                                        width="50"
+                                        class="rounded-circle img-thumbnail"
+                                    />
+                                </button>
+                                <div
+                                    class="dropdown-menu p-2"
+                                    style="width: 250px"
+                                >
+                                    <div
+                                        class="d-flex flex-column align-items-center py-2"
+                                    >
+                                        <img
+                                            src="asset/img/maede.jpg"
+                                            alt="user_pic"
+                                            height="50"
+                                            width="50"
+                                            class="rounded-circle img-thumbnail my-2"
+                                        />
+                                        <div class="d-flex align-items-center">
+                                            <span
+                                                class="spinner-grow spinner-grow-sm text-success"
+                                            ></span>
+                                            <span
+                                                class="fw-bold small ms-1 me-2"
+                                                >مائده خواجوی</span
+                                            >
+                                        </div>
+                                    </div>
+                                    <ul class="nav flex-column px-3">
+                                        <li class="nav-item">
+                                            <a
+                                                href="#"
+                                                class="d-flex align-items-center nav-link fw-normal pt-2"
+                                            >
+                                                <i
+                                                    class="ri-user-fill text-secondary-emphasis me-2"
+                                                ></i>
+                                                <span
+                                                    class="text-secondary-emphasis"
+                                                    >حساب کاربری</span
+                                                >
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                href="#"
+                                                class="d-flex align-items-center nav-link fw-normal pt-0"
+                                            >
+                                                <i
+                                                    class="ri-money-dollar-circle-line text-secondary-emphasis me-2"
+                                                ></i>
+                                                <span
+                                                    class="text-secondary-emphasis"
+                                                    >گردش مالی</span
+                                                >
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                href="#"
+                                                class="d-flex align-items-center nav-link fw-normal pt-0"
+                                            >
+                                                <i
+                                                    class="ri-settings-3-fill text-secondary-emphasis me-2"
+                                                ></i>
+                                                <span
+                                                    class="text-secondary-emphasis"
+                                                    >تنظیمات</span
+                                                >
+                                            </a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a
+                                                href="#"
+                                                class="d-flex align-items-center nav-link fw-normal pt-0"
+                                            >
+                                                <i
+                                                    class="ri-user-add-fill text-secondary-emphasis me-2"
+                                                ></i>
+                                                <span
+                                                    class="text-secondary-emphasis"
+                                                    >افزودن کاربر</span
+                                                >
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider m-0" />
+                                        </li>
+                                        <li class="nav-item mt-1 w-100">
+                                            <button
+                                                class="btn btn-outline-secondary w-100 d-flex align-items-center justify-content-center"
+                                            >
+                                                <i
+                                                    class="ri-logout-box-line me-2"
+                                                ></i>
+                                                <span>Log out</span>
+                                            </button>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- tickets -->
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card bg-info-subtle my-2">
+                                <div class="card-body position-relative">
+                                    <span class="small">تعداد تیکت‌ها</span>
+                                    <span class="d-block fw-bold fs-3 mt-1"
+                                        >128</span
+                                    >
+                                    <i
+                                        class="ri-quill-pen-ai-line text-secondary card-icon"
+                                    ></i>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                        href=""
+                                        class="d-block d-flex justify-content-center align-items-center text-secondary-emphasis text-decoration-none icon-link icon-link-hover"
+                                    >
+                                        <span>مشاهده</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card bg-warning-subtle my-2">
+                                <div class="card-body position-relative">
+                                    <span class="small">در دست اقدام </span>
+                                    <span class="d-block fw-bold fs-3 mt-1"
+                                        >13</span
+                                    >
+                                    <i
+                                        class="ri-book-open-line text-secondary card-icon"
+                                    ></i>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                        href=""
+                                        class="d-block d-flex justify-content-center align-items-center text-secondary-emphasis text-decoration-none icon-link icon-link-hover"
+                                    >
+                                        <span>مشاهده</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card bg-success-subtle my-2">
+                                <div class="card-body position-relative">
+                                    <span class="small"> انجام شده</span>
+                                    <span class="d-block fw-bold fs-3 mt-1"
+                                        >78</span
+                                    >
+                                    <i
+                                        class="ri-check-double-fill text-secondary card-icon"
+                                    ></i>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                        href=""
+                                        class="d-block d-flex justify-content-center align-items-center text-secondary-emphasis text-decoration-none icon-link icon-link-hover"
+                                    >
+                                        <span>مشاهده</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                            <div class="card bg-danger-subtle my-2">
+                                <div class="card-body position-relative">
+                                    <span class="small">دیده نشده </span>
+                                    <span class="d-block fw-bold fs-3 mt-1"
+                                        >18</span
+                                    >
+                                    <i
+                                        class="ri-eye-off-line text-secondary card-icon"
+                                    ></i>
+                                </div>
+                                <div class="card-footer">
+                                    <a
+                                        href=""
+                                        class="d-block d-flex justify-content-center align-items-center text-secondary-emphasis text-decoration-none icon-link icon-link-hover"
+                                    >
+                                        <span>مشاهده</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- profiles -->
+                    <div class="row mb-2">
+                        <div class="col-12">
+                            <div class="card border-1">
+                                <div
+                                    class="card-header d-flex justify-content-between align-items-center"
+                                >
+                                    <span class="bold">پروژه های فعال</span>
+                                    <a
+                                        href=""
+                                        class="small text-secondary-emphasis text-decoration-none opacity-75 icon-link"
+                                    >
+                                        <span>همه</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                                <div class="card-footer p-0">
+                                    <div class="table-responsive">
+                                        <table class="table act-line">
+                                            <thead>
+                                                <th>عنوان</th>
+                                                <th>وضعیت</th>
+                                                <th>مدیر</th>
+                                                <th>آخرین تغییر</th>
+                                                <th>اعضای گروه</th>
+                                            </thead>
+                                            <tbody class="align-middle">
+                                                <tr>
+                                                    <td
+                                                        class="d-flex justify-content-start align-items-center"
+                                                    >
+                                                        <img
+                                                            src="asset/img/photo-3.jpg"
+                                                            alt="persons_img"
+                                                            class="rounded-circle me-1"
+                                                            height="35px"
+                                                            ;width="35px"
+                                                            ;
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >صفحه ی
+                                                                اصلی</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary-emphasis"
+                                                                >شرکت
+                                                                دانشجویار</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="badge bg-success-subtle text-success"
+                                                            >انجام شده</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <!--  d-flex justify-content-start align-items-center -->
+                                                        <img
+                                                            src="asset/img/photo-4.jpg"
+                                                            alt=""
+                                                            class="rounded-circle"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <span
+                                                            class="ms-1 small text-secondary-emphasis"
+                                                            >خانم خزائی</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            >1404/07/18</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <div
+                                                            class="d-flex flex-nowrap"
+                                                        >
+                                                            <img
+                                                                src="asset/img/ayda.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/derma.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-2.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="d-flex justify-content-start align-items-center"
+                                                    >
+                                                        <img
+                                                            src="asset/img/photo-6.jpg"
+                                                            alt=""
+                                                            class="rounded-circle me-1"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >سایت
+                                                                گلخانه</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary-emphasis"
+                                                                >شرکت
+                                                                دانشجویار</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="badge bg-warning-subtle text-warning"
+                                                            >در حال انجام</span
+                                                        >
+                                                    </td>
+                                                    <td class="">
+                                                        <!--  d-flex justify-content-start align-items-center -->
+                                                        <img
+                                                            src="asset/img/photo-5.jpg"
+                                                            alt=""
+                                                            class="rounded-circle"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <span
+                                                            class="ms-1 small text-secondary-emphasis"
+                                                            >آقای عبدی</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            >1405/10/12</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <div
+                                                            class="d-flex flex-nowrap"
+                                                        >
+                                                            <img
+                                                                src="asset/img/photo-6.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                ;
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-2.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                ;
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-1.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/maede.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="d-flex justify-content-start align-items-center"
+                                                    >
+                                                        <img
+                                                            src="asset/img/photo-2.jpg"
+                                                            alt=""
+                                                            class="rounded-circle me-1"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >دارو خانه ی
+                                                                دکتر سورگی</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary-emphasis"
+                                                                >شرکت
+                                                                دانشجویار</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="badge bg-danger-subtle text-danger"
+                                                            >کنسل شده</span
+                                                        >
+                                                    </td>
+                                                    <td class="">
+                                                        <!--  d-flex justify-content-start align-items-center -->
+                                                        <img
+                                                            src="asset/img/maede.jpg"
+                                                            alt=""
+                                                            class="rounded-circle"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <span
+                                                            class="ms-1 small text-secondary-emphasis"
+                                                            >خانم یعقوبی</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            >1405/08/28</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <div
+                                                            class="d-flex flex-nowrap"
+                                                        >
+                                                            <img
+                                                                src="asset/img/photo-2.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-4.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-5.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="">
+                                                    <td
+                                                        class="d-flex justify-content-start align-items-center"
+                                                    >
+                                                        <img
+                                                            src="asset/img/photo-6.jpg"
+                                                            alt=""
+                                                            class="rounded-circle me-1"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >Landing
+                                                                Page</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary-emphasis"
+                                                                >شرکت
+                                                                دانشجویار</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="badge bg-success-subtle text-success"
+                                                            >انجام شده</span
+                                                        >
+                                                    </td>
+                                                    <td class="">
+                                                        <!--  d-flex justify-content-start align-items-center -->
+                                                        <img
+                                                            src="asset/img/photo-1.jpg"
+                                                            alt=""
+                                                            class="rounded-circle"
+                                                            height="35px"
+                                                            ;
+                                                            width="35px"
+                                                            ;
+                                                        />
+                                                        <span
+                                                            class="ms-1 small text-secondary-emphasis"
+                                                            >آقای احمدپور</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <span
+                                                            class="text-secondary-emphasis"
+                                                            >1405/11/28</span
+                                                        >
+                                                    </td>
+                                                    <td>
+                                                        <div
+                                                            class="d-flex flex-nowrap"
+                                                        >
+                                                            <img
+                                                                src="asset/img/photo-1.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-6.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                ;
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/photo-3.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                            <img
+                                                                src="asset/img/derma.jpg"
+                                                                alt=""
+                                                                height="30"
+                                                                ;
+                                                                width="30"
+                                                                class="rounded-circle mp border-2 border border-light shadow"
+                                                            />
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Activities and skills part -->
+                    <div class="row g-2 mb-5">
+                        <!-- Last Activities -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <div
+                                    class="card-header d-flex justify-content-between align-items-center"
+                                >
+                                    <span class="fw-bold">فعالیت‌های اخیر</span>
+                                    <a
+                                        href="#"
+                                        class="small text-secondary-emphasis text-decoration-none opacity-75 icon-link"
+                                    >
+                                        <span>همه</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                                <div class="card-body">
+                                    <ul
+                                        class="list-unstyled last-activity mb-0 pb-0 mt-1 position-relative"
+                                    >
+                                        <li
+                                            class="d-flex justify-content-start align-items-center pb-2 position-relative"
+                                        >
+                                            <span
+                                                class="position-relative mark-l rounded-circle d-flex justify-content-center align-items-center fs-5 bg-info-subtle text-info"
+                                            >
+                                                <i class="ri-share-line"></i>
+                                            </span>
+                                            <div class="ps-2">
+                                                <div>
+                                                    <span class="fw-bold"
+                                                        >مائده خواجوی</span
+                                                    >
+                                                    <span
+                                                        class="x-small text-secondary-emphasis"
+                                                        >1 ساعت پیش</span
+                                                    >
+                                                </div>
+                                                <span
+                                                    class="small text-secondary"
+                                                    >اشتراک‌ گذاری محصولات</span
+                                                >
+                                            </div>
+                                        </li>
+
+                                        <li
+                                            class="d-flex justify-content-start align-items-center pb-2 position-relative"
+                                        >
+                                            <span
+                                                class="position-relative mark-l rounded-circle d-flex justify-content-center align-items-center fs-5 bg-info-subtle text-info"
+                                            >
+                                                <i
+                                                    class="ri-message-2-line"
+                                                ></i>
+                                            </span>
+                                            <div class="ps-2">
+                                                <div>
+                                                    <span class="fw-bold"
+                                                        >سارا حسینی</span
+                                                    >
+                                                    <span
+                                                        class="x-small text-secondary-emphasis"
+                                                        >1 روز پیش</span
+                                                    >
+                                                </div>
+                                                <span
+                                                    class="small text-secondary"
+                                                    >ثبت نظر روی رابط کاربری
+                                                    سایت</span
+                                                >
+                                            </div>
+                                        </li>
+
+                                        <li
+                                            class="d-flex justify-content-start align-items-center pb-2 position-relative"
+                                        >
+                                            <span
+                                                class="position-relative mark-l rounded-circle d-flex justify-content-center align-items-center fs-5 bg-info-subtle text-info"
+                                            >
+                                                <i class="ri-star-line"></i>
+                                            </span>
+                                            <div class="ps-2">
+                                                <div>
+                                                    <span class="fw-bold"
+                                                        >محمد انصاری</span
+                                                    >
+                                                    <span
+                                                        class="x-small text-secondary-emphasis"
+                                                        >1 ماه پیش</span
+                                                    >
+                                                </div>
+                                                <span
+                                                    class="small text-secondary"
+                                                    >ثبت محصولات</span
+                                                >
+                                            </div>
+                                        </li>
+
+                                        <li
+                                            class="d-flex justify-content-start align-items-center pb-2 position-relative"
+                                        >
+                                            <span
+                                                class="position-relative rounded-circle d-flex justify-content-center align-items-center p-1 fs-5 bg-info-subtle text-info"
+                                            >
+                                                <i
+                                                    class="ri-user-settings-line"
+                                                ></i>
+                                            </span>
+                                            <div class="ps-2">
+                                                <div>
+                                                    <span class="fw-bold"
+                                                        >آیدا دهی</span
+                                                    >
+                                                    <span
+                                                        class="x-small text-secondary-emphasis"
+                                                        >مدتی قبل</span
+                                                    >
+                                                </div>
+                                                <span
+                                                    class="small text-secondary"
+                                                    >تأیید اطلاعات حساب
+                                                    کاربری</span
+                                                >
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- skills -->
+                        <div class="col-12 col-md-6">
+                            <div class="card h-100">
+                                <div
+                                    class="card-header d-flex justify-content-between align-items-center"
+                                >
+                                    <span class="fw-bold">مهارت‌های من</span>
+                                    <a
+                                        href="#"
+                                        class="small text-secondary-emphasis text-decoration-none opacity-75 icon-link"
+                                    >
+                                        <span>همه</span>
+                                        <i class="ri-arrow-left-fill"></i>
+                                    </a>
+                                </div>
+                                <div class="card-body p-0">
+                                    <div class="table-responsive">
+                                        <table class="table mb-0 align-middle">
+                                            <thead>
+                                                <tr>
+                                                    <th>عنوان</th>
+                                                    <th>میزان</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="d-flex align-items-center gap-2">
+                                                        <img
+                                                            src="asset/img/html.webp"
+                                                            alt="HTML"
+                                                            height="30"
+                                                            width="30"/>
+                                                        <div class="d-flex flex-column">
+                                                            <span
+                                                                class="fw-bold"
+                                                                >HTML</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary"
+                                                                >زبان
+                                                                نشانه‌گذاری</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td class="w-50">
+                                                        <div class="progress">
+                                                            <div
+                                                                class="progress-bar bg-danger pt-1"
+                                                                style="
+                                                                    width: 98%;
+                                                                "
+                                                            >
+                                                                98%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="d-flex align-items-center gap-2"
+                                                    >
+                                                        <img
+                                                            src="asset/img/css-icon.webp"
+                                                            alt="CSS"
+                                                            height="30"
+                                                            width="30"
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >CSS</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary"
+                                                                >زبان
+                                                                استایل‌دهی</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td class="w-50">
+                                                        <div class="progress">
+                                                            <div
+                                                                class="progress-bar bg-info pt-1"
+                                                                style="
+                                                                    width: 85%;
+                                                                "
+                                                            >
+                                                                85%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="d-flex align-items-center gap-2"
+                                                    >
+                                                        <img
+                                                            src="asset/img/Bootstrap_logo.svg.png"
+                                                            alt="Bootstrap"
+                                                            height="30"
+                                                            width="30"
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >Bootstrap</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary"
+                                                                >فریم‌ورک
+                                                                فرانت‌اند</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td class="w-50">
+                                                        <div class="progress">
+                                                            <div
+                                                                class="progress-bar pt-1"
+                                                                style="
+                                                                    width: 78%;
+                                                                    background-color: blueviolet;
+                                                                "
+                                                            >
+                                                                78%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td
+                                                        class="d-flex align-items-center gap-2"
+                                                    >
+                                                        <img
+                                                            src="asset/img/javascript-logo-javascript-icon-transparent-free-png.webp"
+                                                            alt="JavaScript"
+                                                            height="30"
+                                                            width="30"
+                                                        />
+                                                        <div
+                                                            class="d-flex flex-column"
+                                                        >
+                                                            <span
+                                                                class="fw-bold"
+                                                                >JavaScript</span
+                                                            >
+                                                            <span
+                                                                class="small text-secondary"
+                                                                >زبان تخصصی
+                                                                فرانت‌اند</span
+                                                            >
+                                                        </div>
+                                                    </td>
+                                                    <td class="w-50">
+                                                        <div class="progress">
+                                                            <div
+                                                                class="progress-bar bg-warning pt-1"
+                                                                style="
+                                                                    width: 70%;
+                                                                "
+                                                            >
+                                                                70%
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                let darkbtn = document.querySelector(".dark_btn");
+                let lightbtn = document.querySelector(".light_btn");
+                let body = document.querySelector("body");
+
+                darkbtn.addEventListener("click", function () {
+                    body.setAttribute("data-bs-theme", "dark");
+                });
+
+                lightbtn.addEventListener("click", function () {
+                    body.setAttribute("data-bs-theme", "light");
+                });
+            });
+        </script>
+    </body>
+</html>

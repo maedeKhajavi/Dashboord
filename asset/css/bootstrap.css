@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Vazirmatn", sans-serif;
+}
+
+.mp{
+    margin-right: -13px;
+}
+
+.act-line tbody tr:last-child{
+    border-bottom-color: transparent;
+    margin-bottom: 0px;
+}
+
+.last-activity .mark-l{
+    width: 30px;
+    height: 30px;
+}
+
+.x-small{
+    font-size: 0.7em;
+}
+
+
+.last-activity .mark-l::after{
+    content: "";
+    width: 2px;
+    height: 30px;
+    background-color: rgb(130, 218, 255);
+    position: absolute;
+    top: 100%;
+}
+
+@media (min-width: 768px) {
+.main-content {
+    padding-right: 300px;
+    }
+}
